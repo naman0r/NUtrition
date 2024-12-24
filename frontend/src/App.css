@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#nav-pannel {
+  position: fixed; /* Fixes the navigation bar to the top of the page */
+  top: 0; /* Aligns the navigation bar to the top */
+  left: 0; /* Starts from the left edge */
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0rem 0rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#nav-pannel img {
+  margin: 7px 15px 0px 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#item-container {
+  background-color: rgba(59, 61, 61, 0.21);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Makes the footer span the entire width */
+  background-color: #333; /* Example: Background color */
+  color: white; /* Example: Text color */
+  text-align: center; /* Example: Centered text */
+  padding: 10px 0; /* Example: Padding for better spacing */
 }
 
-.card {
-  padding: 2em;
+#footer p,
+footer Link {
+  margin: 0px 10px;
 }
 
-.read-the-docs {
-  color: #888;
+#feedback-container {
+  background-color: rgba(250, 235, 215, 0.432);
+  border-radius: 10px;
+  align-self: center;
+  width: 100vw;
+  padding: 0rem;
+  position: fixed;
+  top: 90px;
+}
+
+#feedback-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between the icon and text */
+  background-color: #d8b4fe; /* Light purple background */
+  color: #4a148c;
+  border: none; /* ADD A BORDER, not too thick */
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 0vw 40vw;
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor on hover, but not really needed since most users on mobile */
 }
