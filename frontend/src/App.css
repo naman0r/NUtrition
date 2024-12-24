@@ -35,27 +35,95 @@ footer Link {
   margin: 0px 10px;
 }
 
+/* Feedback Page Container */
 #feedback-container {
-  background-color: rgba(250, 235, 215, 0.432);
-  border-radius: 10px;
-  align-self: center;
-  width: 100vw;
-  padding: 0rem;
-  position: fixed;
-  top: 90px;
+  width: 90vw;
+  margin: auto; /* Center align */
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* Light text for contrast */
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 40px 80px rgba(99, 23, 23, 0.5); /* Subtle shadow */
 }
 
-#feedback-container button {
+/* Form Elements */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between input fields */
+  align-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #d8b4fe; /* Light purple text for labels */
+  margin-bottom: 5px;
+}
+
+.input-field,
+.textarea-field {
+  width: 90%;
+  background-color: #2c2c2c; /* Slightly lighter background */
+  color: #ffffff;
+  border: 1px solid #d8b4fe; /* Purple border */
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.textarea-field {
+  resize: none; /* Disable resizing for a clean look */
+}
+
+/* Submit Button */
+button[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Space between the icon and text */
-  background-color: #d8b4fe; /* Light purple background */
-  color: #4a148c;
-  border: none; /* ADD A BORDER, not too thick */
+  gap: 8px; /* Space between icon and text */
+  background-color: #d8b4fe; /* Purple background */
+  color: #4a148c; /* Dark purple text */
+  border: none;
   border-radius: 20px;
-  padding: 8px 16px;
-  margin: 0vw 40vw;
+  padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer; /* Pointer cursor on hover, but not really needed since most users on mobile */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #c48efb; /* Slightly lighter purple on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.icon {
+  font-size: 14px;
+}
+
+/* Thank You Text */
+.thank-you-text {
+  font-size: 12px;
+  text-align: center;
+  color: #bdbdbd; /* Light gray text */
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #feedback-container {
+    max-width: 90%; /* Adjust width for smaller screens */
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }

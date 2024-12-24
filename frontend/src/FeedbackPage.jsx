@@ -21,25 +21,33 @@ function FeedbackPage() {
       <div id="feedback-container">
         <h1>Feedback Form</h1>
         <div>
-          <h2>NUtrition</h2>
           <form onSubmit={handleSubmit} className="feedback-form">
+            <div>
+              <label htmlFor="name">Name: </label>
+              <input type="text" />
+            </div>
             {/* Email Input */}
             <div className="input-group">
-              <label htmlFor="email" className="input-label">
-                Email
+              <label
+                htmlFor="email"
+                className="input-label"
+                style={{ margin: 2 }}
+              >
+                Email:
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Enter a valid northeastern email or 'N/A'"
+                placeholder="valid northeastern email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="input-field"
-              />
+              />{" "}
             </div>
 
+            <br />
             {/* Feedback Input */}
             <div className="input-group">
               <label htmlFor="feedback" className="input-label">
