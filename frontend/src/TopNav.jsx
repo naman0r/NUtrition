@@ -34,7 +34,8 @@ function TopNav() {
       <Link to="/" onClick={() => handleClick("home button clicked")}>
         <img src="../public/NUtrition_logo.svg" alt="NUtrition logo" />
       </Link>
-      <Link to="/feedback">Feedback Form (tempporary)</Link>
+      <Link to="/form2">Feedback Form (tempporary)</Link>
+      <Link to="/logmeal">log meal</Link>
       <Link
         to="/" // TO-DO!!
         onClick={() =>
